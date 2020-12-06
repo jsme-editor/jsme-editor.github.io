@@ -1,0 +1,97 @@
+<html>
+<head>
+<title>JSME Help</title>
+  <style>
+    img{border-width:1px; border-color:white; border-style:solid; vertical-align:middle}
+    body{font-family:arial,sans-serif; font-size:14px}
+    h2,h3{color:#8080ff}
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body bgcolor="white">
+<h2><a href="http://peter-ertl.com/jsme/">JSME</a> Help and Basic Instructions</h2>
+
+<h3>JSME Menu</h3>
+<img src="../images/smiles.png"> shows molecule <a href="http://en.wikipedia.org/wiki/Simplified_molecular-input_line-entry_system">SMILES</a><br>
+<img src="../images/clean.png"> clears the editing area (or the current molecule, if structure contains several parts)<br>
+<img src="../images/new.png"> starts new molecule component (when multipart option or reaction input are enabled)<br>
+<img src="../images/del.png"> delete mode (click on atom or bond to delete it)<br>
+<img src="../images/delr.png"> deletes functional group - choose this option and then click bond connecting the group with the main skeleton<br>
+<img src="../images/123.png"> starts atom numbering or reaction mapping (when this option is enabled)<br>
+<img src="../images/smarts.png"> query atom / <a href="http://en.wikipedia.org/wiki/Smiles_arbitrary_target_specification">SMARTS</a> (when this option is enabled)<br>
+<img src="../images/charge.png"> switches between allowed charged states on clicked atom<br>
+<img src="../images/react.png"> reaction input (when reactions are enabled)<br>
+<img src="../images/undo.png"> undo<br>
+<img src="../images/redo.png"> redo<br>
+<img src="../images/spiro.png"> next ring will be added as a spiro ring<br>
+<img src="../images/info.png"> version information and link to the help page<br>
+<img src="../images/stereo.png"> input stereo bond, click existing stereo bond to cycle through possible types (up, dowm, orientation)<br>
+<img src="../images/chain.png"> powerful chain tool, allows creation of various chains and rings; click single bond to change it to double<br>
+<img src="../images/xatom.png"> allows input of inorganic atoms or atoms in nonstandard valence state (in this case enter the atom symbol enclosed in [], for example the carbene carbon will be [C])<br>
+<img src="../images/fg.png"> opens functional group popup menu<br>
+<img src="../images/movea.png"> move selected atom useful when drawing crowded structures (visible when enabled in options)<br>
+<p>
+
+<h3>Basic Editing</h3><p>
+<b>Rings</b> are added connected by a single bond (when not added to a terminal atom); if you want to add a <b>spiro ring</b> press <i>Shift</i> when adding it. An alternative way to add a spiro ring (that may be used also on touch devices) is to press the <img src="../images/spiro.png"> icon; the next ring will be then added as spiro.<br>
+With single bond selected, a click on existing single bond changes it to double.<br>
+With the powerful chain tool <img src="../images/chain.png"> you can draw chains, saturated rings and by clicking on single bond change it to a double bond.<br>
+Molecule may be <b>moved</b> by "dragging" free space and <b>rotated</b> by pressing also the <i>Shift</i> key.<br>
+<p>
+
+<h3>JSME Keyboard Shortcuts</h3><p>
+If you are using JSME often, learn the following shortcuts. They will speed-up your editing considerably.<p>
+<b>ESC</b> returns to the standard editing state (carbon, single bond)<br>
+<b>d</b> or <b>Del</b> starts delete mode<br>
+<b>atoms</b> C, N, O, P, S, F, L (for Cl), B (for Br), I, H, R<br>
+<b>bonds</b> - for single bond, = for double bond<br>
+<b>rings</b> 3..8 for 3 to 8 membered rings, 1 for phenyl and 0 for furyl<br>
+<b>groups</b> a - COOH, y - NO2, z - SO3H, t - tert. butyl, ft - CF3<br>
+<p>
+
+<h3>Stereochemistry</h3>
+Stereochemistry at C4 centers, double bonds and allenes is supported.
+Use the up / down wedge bonds to indicate stereochemistry at the C4 centers. Remember, that only bonds with a "sharp point" towards the atom are considered. When creating SMILES the editor tries to guess missing stereo features, in unresolvable cases an error message is issued and the SMILES without stereo information is created.<br>
+When the "autoez" option is set, SMILES with E,Z stereochemistry on all non-ring double bonds will be generated automatically.
+Without this keyword (or for ring double bonds) you have to mark a double bond as stereo by clicking on it with the stereo bond button selected. The bond color will change to magenta.<br>
+Stereochemistry may be completely disabled by the "nostereo" option.
+<p>
+
+<h3>Atom Numbering</h3>
+Atom numbering (marking) is enabled by the option "number" (for reaction input this is default). Button <img src="../images/123.png"> appears in the menu. To mark an atom the "numbering mode" must be on, selected by clicking the 123 button. The atom number is chosen by pressing respective keys on your keyboard (i.e. 2 or 12); then atom(s) must be clicked. To delete the number pres 0 at your keyboard and then click the atom.
+<p>
+
+<h3>Input of Multipart Structures</h3>
+By default only non-disconnected structures may be entered. This may be changed by a "multipart" option. A button <img src="../images/new.png"> appears in the menu. A new molecule may be started only after clicking this button, then selecting a proper template (atom, ring or bond) and clicking free space in the drawing area. Without clicking the NEW button first clicking the free space has the same effect as in the standard mode (i.e moving or rotation of the last touched molecule). In the multipart mode the <img src="../images/clean.png"> button deletes the last touched molecule.
+<p> 
+<h3>Reaction Input</h3>
+Reaction input is enabled with the option "reaction". Buttons <img src="../images/react.png">, <img src="../images/new.png"> and <img src="../images/123.png"> appear in the menu and arrow appears also in the drawing area.
+Now simply draw reactant(s), product(s) and modulator(s) (modulators have to be above the arrow) as explained in the description of input of multipart structures.
+The arrow button enables simplified input of reactions. After clicking it, the reactant will be copied to the product (including atom numbering, if any).
+<p>
+
+<h3>Query Features</h3>
+Query button <img src="../images/smarts.png"> (when enabled in the options) launches a query window that allows creation of SMARTS atom or bond queries by combining various atom attributes. Select the SMARTS options in this panel and then click the respective atom or bond in the molecule.
+<p>
+<img src="../images/querywindow.png">
+<p>
+
+<h3>Copy and Paste</h3>
+Right mouse click opens the Copy and Paste pop-up menu that allows to copy the  molecule as SMILES or MOL file or paste MOL , SDF, or RXN files into the editor.
+<p>
+<img src="../images/copypaste.png">
+<p>
+On supported touch devices, the menu can be opened by “touch and hold” on the surface of the editor.<br>
+Keyboard shortcuts Ctrl C (for copy) and Ctrl V (for paste) are supported on most browsers.
+<p>
+<h3>Drag and Drop of Files in the Editor</h3>
+Some  HTML 5 compatible browsers support the drag and drop of files. Starting with version 2013-03-24, JSME accepts dropping of text files in the format MOL, SDF and RXN.
+<br>
+<img src="../images/dragdrop.png">
+<br>
+To drag molecule from the editor into the appropriate destination (for example Word or text document, or desktop) drag the icon in the lower right corner of the editor.
+<p>
+
+</font>
+</body>
+</html>
