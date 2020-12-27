@@ -18,4 +18,6 @@ JSME is a free molecule editor written in JavaScript. JSME is a direct successor
  JSME is released under the terms of the BSD license. See the file license.txt in the distribution for license
     details.
     
- [Try JSME](dist/JSME_test.html)
+ [Try JSME](./dist/JSME_test.html)
+ 
+ [Download the latest JSME distribution as zip file](./downloads/JSME_2020-12-26.zip)
