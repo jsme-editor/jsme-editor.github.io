@@ -6,6 +6,11 @@
 JSME is a free molecule editor written in JavaScript. JSME is a direct successor of the JME Molecule Editor applet.
 JSME supports drawing and editing of molecules and reactions on desktop computer, as well as on handheld devices
 including iPhone, iPad and Android smartphones and tablets.
+
+
+![JSME screenshot](jsme_screenshot.png)
+
+
 ## Installation
     npm install jsme-editor
 
