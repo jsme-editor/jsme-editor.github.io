@@ -331,6 +331,7 @@ The JSME instance can be customized using a set of parameters. These parameters 
 <b>depictbg</b> - background color in depict mode in RGB hex format (e.g. #FFFFFF) <br>
 <b>guicolor</b> - background color of the GUI elements in RGB hex format (e.g. #FFFFFF) (see also method
 setUserInterfaceBackgroundColor() )<br>
+<b>guiAtomColor</b> - set atom symbol color in the GUI to the same color in RGB hex format (e.g. #000000 for black)
 <b>atombg</b> - atom background colors - see the demo JSME_atom_highlight_demo.html for an example<br>
 <b>depictbg</b> - background color for the depict mode in hex format - no test yet<br>
 <b>atombgsize</b> - relative size of the atom background circle, default is "1.0" <br>
@@ -363,7 +364,7 @@ keephs). This option can be used to remove hydrogens when pasting a structure wi
 the Pubchem database<br>
 <b>query, noquery</b> - enable / disable query features (default is noquery). In query mode, a SMARTS is generated when
 a smiles is requested.<br
-><b>autoez, noautoez</b> - automatic generation of SMILES with E,Z stereochemistry (default is autoez)<br>
+><b>autoez, noautoez</b> - automatic generation of SMILES with E,Z stereochemistry (default is autoez). Option "stereo" must enabled.<br>
 <b>canonize,nocanonize</b> - SMILES canonicalization and detection of aromaticity supressed (default is canonize)<br>
 <b>stereo,nostereo</b> - stereochemistry not considered when creating SMILES (default is stereo)<br>
 <b>reaction, noreaction</b> - enable / disable reaction input<br>
@@ -385,6 +386,8 @@ will have an atom map number equal to 1. The atom map number is included in the 
 <b>markNothing, noMarkNothing</b> - disable marking action, existing highlighted atoms or bonds are still shown.<br>
 
 <b>pseudoMark, nopseudoMark</b> - no atom marking happens but an atom mark event is triggered.<br>
+<b>showAtomMapNumberWithBackgroundColor, noshowAtomMapNumberWithBackgroundColor</b> -display background color for atoms
+with a valid atom map. The atom map number is used as an index in the background color palette (starting at 1)
 <b>depict, nodepict</b> - the applet will appear without editing buttons, this is used for structure display only
 (default nodepict)<br>
 <b>depictaction, nodepictaction</b> - allow structure editing in depict mode<br>
@@ -395,7 +398,7 @@ mode<br>
 
 
 <b>paste, nopaste</b> - enabling and disabling the paste action including drop of a MOL/RXN on the applet.,
-can be used together with the depict option to have a read only depiction<br>
+can be used together with the depict option to have a read only depiction. Pasting is disabled by default in depict modet<br>
 <b>border, noborder</b> (used together with the depict option) - displays a border around depicted molecule (default is
 noborder)<br>
 <b>newlook, oldlook</b> - turn on/off the old Java based JME look (default is newlook)<br>

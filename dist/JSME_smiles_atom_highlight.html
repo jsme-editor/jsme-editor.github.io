@@ -17,18 +17,13 @@
                 "options": "oldlook,marker,markAtomOnly,nocanonize"
             });
 
-            jsmeApplet.setNotifyStructuralChangeJSfunction("show_smiles");
+            jsmeApplet.setCallBack("AfterStructureModified", show_smiles);
+            //jsmeApplet.setNotifyStructuralChangeJSfunction("show_smiles");
         }
 
         var patt = /\[([A-Za-z][a-z]?)H?\d*:\d+\]/g; //regexp pattern for numbered atom
-        function show_smiles() {
-            checkbox = document.getElementById("canonic_check");
-            if (checkbox.checked) {
-                jsmeApplet.options("canonize");
-            } else {
-                jsmeApplet.options("nocanonize");
-            }
-            smiles = jsmeApplet.smiles(); //atom that are colored are numbered
+        function show_smiles(event) {
+            smiles = event.src.smiles(); //atom that are colored are numbered
             new_smiles = smiles.replace(patt, '<em>$1</em>');
             document.getElementById("smiles_container").innerHTML = new_smiles
         }
@@ -44,7 +39,7 @@
 </p>
 <div id="jsme_container"></div>
 <form>
-    <input type="checkbox" id="canonic_check" onclick='show_smiles();'" >Canonical SMILES
+    <input type="checkbox" onChange='jsmeApplet.options(this.checked ? "canonize" : "nocanonize");show_smiles({src: jsmeApplet})' >Canonical SMILES
 </form>
 <BR>
 SMILES: <b><span id="smiles_container"></span></b>

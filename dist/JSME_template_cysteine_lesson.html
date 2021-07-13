@@ -11,10 +11,15 @@
         // cysteine template
         var template_jsme = "7 6 C 8.32 -7.86 N 10.48 -8.56 C 9.66 -7.42 C 10.09 -6.09 O 9.15 -5.05 O 11.46 -5.80 S 7.19 -7.03 2 3 1 3 1 -1 3 4 1 4 5 2 4 6 1 1 7 1";
 
-        function transfertTemplate() {
-
-            if ( jsmeTemplate.hasMarkedAtom()) {
-                jsmeEditor.setTemplate(jsmeTemplate.jmeFile(), "cystein template set");
+        function transfertTemplate(event) {
+            var action = event.action;
+            if ( action != "markAtom") {
+                return;
+            }
+            var template = event.src;
+            if (template.hasMarkedAtom()) {
+                console.log(template.jmeFile());
+                jsmeEditor.setTemplate(template.jmeFile(), "cystein template set");
             } else {
                 // Should not add a template without marked atom
                 jsmeEditor.alert("No marked atom in template");
@@ -63,5 +68,12 @@ a disulfide bond.
     </tr>
 </table>
 
+
+Procedure:
+<ol>
+    <li>click on the sulfur atom of the cysteine in the template (below the  editor)t to mark the atom to be used as an anchor</li>
+    <li>click on the editor to add the cysteine</li>
+    <li>click on the sulfur atom of the cysteine in the editor</li>
+</ol>
 </body>
 </html>

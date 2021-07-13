@@ -35,7 +35,7 @@
             document.JME = jsmeApplet;
 
 
-            jsmeApplet.setAfterStructureModifiedCallback(showMoleculeName);
+            jsmeApplet.setCallBack("AfterStructureModified", showMoleculeName);
 
             //customize the paste label in the popup menu
             jsmeApplet.setPasteLabel("Paste any chemical text repr.");//set to null to reset

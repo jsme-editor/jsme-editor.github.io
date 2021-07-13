@@ -1,4 +1,37 @@
 
+2021-07-13
+    - improved example file JSME_test.html
+    - sulfonylmethanediamine SMILES generation bug fix
+    - improved JavaDoc
+
+2021-06-10
+	
+	- Undo stack stores the state of the editor during editor initialization 
+	- Possibility to set default format for copy/cut and D&D
+	- Chiral flag status shown in the info bar
+	- Avoid browser window automatic scroll when the mouse pointer moves on the editor
+	- bug fix: setTemplate()
+	
+	
+2021-05-10
+	- sub and superscript text style for the number of hydrogens and charges
+	
+2021-04-05
+
+	- bug fix: JME output for fragments, no more coordinate overlap
+	- bug fix: recompute 2D coordinates: problem with explicit hydrogens
+	- new option: guiAtomColor (customization of JSME look)
+	- the depict example page has been extended
+	- new example JSME_access_internal_data.html
+	- new example JSME_alternative_look.html
+	- new methods: getAtom(), getBond() and getMolecule()
+	- replaced all setAfterStructureModifiedCallback() from the examples because of deprecation
+	- setBondAdditionalData bug fix (wrong event name reported)
+	- improved readability of atom labels when a background colored circle is shown (additional text stroke)
+	- custom background coloring is now independent from atom numbering and atom marker
+	
+2021-01-31
+	- new option showAtomMapNumberWithBackgroundColor
 2020-12-26
 	- migration of help.html file to https://jsme-editor.github.io/help.html
 	

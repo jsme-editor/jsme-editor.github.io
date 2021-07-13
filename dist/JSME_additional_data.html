@@ -24,13 +24,12 @@
                 "markerIconColor": color,
             });
 
-            jsmeApplet.setAfterStructureModifiedCallback(showEvent);
+            jsmeApplet.setCallBack("AfterStructureModified", showEvent);
             jsmeApplet.setBackGroundColorPalette([color]);
 
             document.getElementById("log").value = "";
         }
 
-        var patt = /\[([A-Za-z][a-z]?)H?\d*:\d+\]/g; //regexp pattern for numbered atom
         function showEvent(event) {
 
             var log = document.getElementById("log");
@@ -38,26 +37,26 @@
         }
 
         function insertAD(at) {
-            jsmeApplet.setAtomAdditionalData(at, {msg: '-{Extra data for atom # ' + at + ' (could be also a JSON object, array, ...}-'}, false, false);
+            jsmeApplet.setAtomAdditionalData(at, {msg: 'You can save any data you want in the atom additional data field' +  at, 'at': at}, true, true);
             jsmeApplet.setAtomBackgroundColors(0, at + ',1');
         }
 
         function getAD(at) {
             var log = document.getElementById("log");
 
-            log.value += '\n' + jsmeApplet.getAtomAdditionalData(at)['msg'] + '\n';
+            log.value += '\n' + JSON.stringify(jsmeApplet.getAtomAdditionalData(at)) + '\n';
         }
 
 
         function insertBD(b) {
-            jsmeApplet.setBondAdditionalData(b, {msg: '------------Extra bond data  ' + b}, true, true);
+            jsmeApplet.setBondAdditionalData(b, {msg: 'Lorem Ipsum', msg2: 'I am a bond', 'bond_index': b}, true, true);
             jsmeApplet.setBondBackgroundColors(0, b + ',2');
         }
 
         function getBD(b) {
             var log = document.getElementById("log");
 
-            log.value += '\n' + jsmeApplet.getBondAdditionalData(b)['msg'] + '\n';
+            log.value += '\n' + JSON.stringify(jsmeApplet.getBondAdditionalData(b))+ '\n';
         }
 
 
@@ -87,7 +86,7 @@
 <H1>Adding additional arbitrary data to atoms and bonds</H1>
 <p>
     Arbitrary data (e.g. JSON object) can be saved into the atom and bond data structures.
-    Methods are (s)etAtomAdditionalData, g(s)etBondAdditionalData. This page shows also the use of the pseudoMark
+    Methods are g(s)etAtomAdditionalData, g(s)etBondAdditionalData. This page shows also the use of the pseudoMark
     option, custom marker color circle (markerIconColor), custom bond and atom background colors (setAtomBackgroundColors, setBondBackgroundColors),
     custom size for atom and bond background coloring.
 
@@ -139,7 +138,6 @@ After structure changed event:
     </tr>
 </table>
 
-<BR>
 <BR>
 
 </body>
