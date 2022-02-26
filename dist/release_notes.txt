@@ -1,3 +1,9 @@
+2021-02-26
+    - background color palette changed: yellow color more saturated, additional light green color
+    - new option: disable gui zoom (github issue #17)
+    - bug fix: AfterPaste event was not working (github issue #22)
+    - bug fix: marked atom in template (github issue #20)
+
 
 2021-07-13
     - improved example file JSME_test.html

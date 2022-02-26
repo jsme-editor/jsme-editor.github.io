@@ -25,6 +25,8 @@
             });
 
             jsmeApplet.setCallBack("AfterStructureModified", showEvent);
+            jsmeApplet.setCallBack("AfterPaste", showEvent);
+
             jsmeApplet.setBackGroundColorPalette([color]);
 
             document.getElementById("log").value = "";
