@@ -1,4 +1,15 @@
-2021-02-26
+2022-09-26
+    - Renaming of "star" option to "circle" or "marker" in the example HTML files
+
+2022-09-03
+	- https fix for the JSME_chemical_resolver_demo.html
+    - bug fix: noShowdragandDropIconindepictmode (github issue # 24)
+    - bug fix: deprecation warnings in Firefox (github issue # 23)
+    - bug fix: Delete molecule using Delete key caused error (github issue #25)
+    - bug fix bondhighlight (github issue #27)
+    - new atom inspector function: set atomic charge
+
+2022-02-26
     - background color palette changed: yellow color more saturated, additional light green color
     - new option: disable gui zoom (github issue #17)
     - bug fix: AfterPaste event was not working (github issue #22)

@@ -23,7 +23,7 @@
 .mosaic-Reference-chrome {
   height: 5px;
   width: 5px;
-  zoom: 1;
+  
 }
 /*
 body {
@@ -845,7 +845,7 @@ html>body .mosaic-LayoutPanel-BorderLayout .SouthCollapsedImageButton img {
 .mosaic-DecoratedBottomTabBar .tabBottomLeft,
 .mosaic-DecoratedBottomTabBar .tabBottomRight {
 	padding: 0px;
-	zoom: 1;
+	
 }
 .mosaic-DecoratedBottomTabBar .tabBottomLeftInner,
 .mosaic-DecoratedBottomTabBar .tabBottomRightInner {
@@ -1078,7 +1078,7 @@ html>body .mosaic-DecoratedBottomTabBar .gwt-TabBarItem-selected .tabBottomRight
 	cursor: default;
 	background: none;
 	opacity: .5;
-	zoom: 1;
+	
 	filter: alpha(opacity=40);
 }
 
@@ -1115,7 +1115,7 @@ html>body .mosaic-DecoratedBottomTabBar .gwt-TabBarItem-selected .tabBottomRight
 .gwt-Button[disabled] table,
 .gwt-Button[disabled] img {
 	opacity: .5;
-	zoom: 1;
+	
 	filter: alpha(opacity=40);
 }
 

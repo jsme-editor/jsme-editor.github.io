@@ -15,7 +15,7 @@ em {background-color:rgb(102,255,255);}
     function jsmeOnLoad() {
     
         jsmeApplet = new JSApplet.JSME("jsme_container", "380px", "340px", {
-           "options" : "oldlook,star"
+           "options" : "oldlook,marker"
         });
         
         jsmeApplet.setCallBack("AfterStructureModified", showEvent);
@@ -37,7 +37,7 @@ em {background-color:rgb(102,255,255);}
 <body>
 <H1>Structure modified and atom mark demo</H1>
 <p>
-Draw a structure, click on the star icon of the editor and click on one or more atoms
+Draw a structure, click on the circle icon of the editor and click on one or more atoms
 </p>
 <div id="jsme_container"></div>
 <button type="button" id="clear_but" onclick='document.getElementById("log").value=""'>Clear log</button>

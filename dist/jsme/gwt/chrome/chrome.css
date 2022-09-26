@@ -43,7 +43,7 @@ a, a:visited, a:hover {
 .gwt-Reference-chrome {
   height: 5px;
   width: 5px;
-  zoom: 1;
+  
 }
 
 .gwt-Button {
@@ -92,7 +92,7 @@ a, a:visited, a:hover {
 .gwt-DecoratorPanel .bottomRightInner {
   width: 5px;
   height: 5px;
-  zoom: 1;
+  
 }
 .gwt-DecoratorPanel .topLeft {
   background: url(images/corner.png) no-repeat 0px 0px;
@@ -145,21 +145,21 @@ a, a:visited, a:hover {
 }
 .gwt-DialogBox .dialogTopLeftInner {
   width: 5px;
-  zoom: 1;
+  
 }
 .gwt-DialogBox .dialogTopRightInner {
   width: 8px;
-  zoom: 1;
+  
 }
 .gwt-DialogBox .dialogBottomLeftInner {
   width: 5px;
   height: 8px;
-  zoom: 1;
+  
 }
 .gwt-DialogBox .dialogBottomRightInner {
   width: 5px;
   height: 8px;
-  zoom: 1;
+  
 }
 .gwt-DialogBox .dialogTopLeft {
   background: url(images/corner.png) no-repeat -13px 0px;
@@ -343,22 +343,22 @@ a, a:visited, a:hover {
 .gwt-MenuBarPopup .menuPopupTopLeftInner {
   width: 5px;
   height: 5px;
-  zoom: 1;
+  
 }
 .gwt-MenuBarPopup .menuPopupTopRightInner {
   width: 8px;
   height: 5px;
-  zoom: 1;
+  
 }
 .gwt-MenuBarPopup .menuPopupBottomLeftInner {
   width: 5px;
   height: 8px;
-  zoom: 1;
+  
 }
 .gwt-MenuBarPopup .menuPopupBottomRightInner {
   width: 8px;
   height: 8px;
-  zoom: 1;
+  
 }
 .gwt-MenuBarPopup .menuPopupTopLeft {
   background: url(images/corner.png) no-repeat 0px -36px;
@@ -433,22 +433,22 @@ a, a:visited, a:hover {
 .gwt-DecoratedPopupPanel .popupTopLeftInner {
   width: 5px;
   height: 5px;
-  zoom: 1;
+  
 }
 .gwt-DecoratedPopupPanel .popupTopRightInner {
   width: 8px;
   height: 5px;
-  zoom: 1;
+  
 }
 .gwt-DecoratedPopupPanel .popupBottomLeftInner {
   width: 5px;
   height: 8px;
-  zoom: 1;
+  
 }
 .gwt-DecoratedPopupPanel .popupBottomRightInner {
   width: 8px;
   height: 8px;
-  zoom: 1;
+  
 }
 .gwt-DecoratedPopupPanel .popupTopLeft {
   background: url(images/corner.png) no-repeat 0px -10px;
@@ -524,7 +524,7 @@ a, a:visited, a:hover {
   cursor: default;
   opacity: .5;
   filter: alpha(opacity=40);
-  zoom: 1;
+  
 }
 .gwt-PushButton-down,
 .gwt-PushButton-down-hovering,
@@ -547,7 +547,7 @@ a, a:visited, a:hover {
   cursor: default;
   opacity: 0.5;
   filter: alpha(opacity=40);
-  zoom: 1;
+  
 }
 
 .gwt-RadioButton {
@@ -653,7 +653,7 @@ a, a:visited, a:hover {
 .gwt-DecoratedStackPanel .stackItemTopRight {
   height: 6px;
   width: 6px;
-  zoom: 1;
+  
 }
 .gwt-DecoratedStackPanel .stackItemTopLeft {
   border-left: 1px solid #bbbbbb;
@@ -741,22 +741,22 @@ a, a:visited, a:hover {
 .gwt-SuggestBoxPopup .suggestPopupTopLeftInner {
   width: 5px;
   height: 5px;
-  zoom: 1;  
+    
 }
 .gwt-SuggestBoxPopup .suggestPopupTopRightInner {
   width: 8px;
   height: 5px;
-  zoom: 1;
+  
 }
 .gwt-SuggestBoxPopup .suggestPopupBottomLeftInner {
   width: 5px;
   height: 8px;
-  zoom: 1;
+  
 }
 .gwt-SuggestBoxPopup .suggestPopupBottomRightInner {
   width: 8px;
   height: 8px;
-  zoom: 1;
+  
 }
 .gwt-SuggestBoxPopup .suggestPopupTopLeft {
   background: url(images/corner.png) no-repeat 0px -23px;
@@ -848,7 +848,7 @@ a, a:visited, a:hover {
 .gwt-DecoratedTabBar .tabTopLeft,
 .gwt-DecoratedTabBar .tabTopRight {
   padding: 0px;
-  zoom: 1;
+  
 }
 .gwt-DecoratedTabBar .tabTopLeftInner,
 .gwt-DecoratedTabBar .tabTopRightInner {
@@ -956,7 +956,7 @@ a, a:visited, a:hover {
   border: 1px outset #ccc;
   cursor: default;
   opacity: .5;
-  zoom: 1;
+  
   filter: alpha(opacity=40);
 }
 .gwt-ToggleButton-down,
@@ -982,7 +982,7 @@ a, a:visited, a:hover {
   border: 1px inset #ccc;
   cursor: default;
   opacity: .5;
-  zoom: 1;
+  
   filter: alpha(opacity=40);
 }
 
