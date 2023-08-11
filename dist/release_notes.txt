@@ -1,3 +1,15 @@
+2023-07-31
+	- Query box: labels are not truncated anymore
+
+2023-05-07
+	- if the chain tool is selected, bonds can also be highlighted by mouse over
+	- resetAtomMarks() (fix for issue #31) resetBondMarrks(), resetAtomMaps()
+	- bug fix: issue #33:  JSME set atom events not triggered when using keyboard to set atom type
+	- improve rotation of molecule (shift drag)
+	- IE6/IE7 supports removed from permutations (GWT user-agents)
+	- bug fix: show chain length in info during chain build
+	- bug fix: bond centers are now recomputed after atom move action (mouse over -> no bond highlight)
+
 2022-09-26
     - Renaming of "star" option to "circle" or "marker" in the example HTML files
 

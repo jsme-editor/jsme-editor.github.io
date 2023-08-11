@@ -1,6 +1,6 @@
 {
   "name": "jsme-editor",
-  "version": "2022.09.26",
+  "version": "2023.07.31",
   "description": "JSME molecule editor",
   "main": "jsme.nocache.js",
   "scripts": {
