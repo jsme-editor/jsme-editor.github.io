@@ -26,7 +26,7 @@ JavaScript, J. Cheminformatics 5:24 \(2013\)](http://www.jcheminf.com/content/5/
 
 ## License
 
-[3-clause BSD](./license.txt)
+[3-clause BSD](./dist/license.txt)
 
 [npm-image]: https://img.shields.io/npm/v/jsme-editor.svg?style=flat-square
 [npm-url]: https://www.npmjs.com/package/jsme-editor
