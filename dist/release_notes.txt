@@ -1,3 +1,8 @@
+2024-04-29
+	- bug fix: Problems with coloring functional group page (GitHub issue #48)
+	- bug fix: Atom chain tool does not merge last atom if a closure happens (GitHub issue #32)
+	- bug fix: JME format loses query bond information (GitHub issue #45)
+
 2023-07-31
 	- Query box: labels are not truncated anymore
 

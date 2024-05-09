@@ -1,6 +1,6 @@
 {
   "name": "jsme-editor",
-  "version": "2023.07.31",
+  "version": "2024.04.29",
   "description": "JSME molecule editor",
   "main": "jsme.nocache.js",
   "scripts": {
@@ -24,3 +24,4 @@
   "author": "Peter Ertl, Bruno Bienfait",
   "license": "BSD-3-Clause"
 }
+
