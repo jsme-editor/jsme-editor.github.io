@@ -19,6 +19,9 @@ including iPhone, iPad and Android smartphones and tablets.
 ### JSME in a React component for easy use in React apps
 [jsme-react](https://github.com/douglasconnect/jsme-react)
 
+### JSME incorporated into a Python Holoviz "Panel"
+[Panel-Chemistry](https://github.com/awesome-panel/panel-chemistry)
+
 ## Publication
 [B. Bienfait and P. Ertl, JSME: a free molecule editor in
 JavaScript, J. Cheminformatics 5:24 \(2013\)](http://www.jcheminf.com/content/5/1/24)
